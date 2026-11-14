@@ -46,6 +46,45 @@ section{padding:85px 0;border-top:1px solid #1e2b3e}.section-head{display:flex;a
 
 /* TEKKO-KYOKU neon city map */
 .city-map-v2{height:auto;min-height:600px;aspect-ratio:1100/620;background:#07111d;border:1px solid #31536a;box-shadow:0 18px 55px #0009,inset 0 0 55px #0b2940;margin:28px 0 22px;isolation:isolate}.city-map-v2:before,.city-map-v2:after{display:none}.city-map-v2 .city-svg{position:absolute;inset:0;width:100%;height:100%;opacity:.98}.map-hud{position:absolute;z-index:4;left:18px;right:18px;top:15px;display:flex;justify-content:space-between;color:#7e9eb4;font:9px var(--mono);letter-spacing:1.4px}.map-label{position:absolute;z-index:3;padding:10px 12px;background:#07121de8;border-left:2px solid var(--blue);box-shadow:0 5px 20px #0008;backdrop-filter:blur(5px)}.map-label b,.map-label small{display:block}.map-label b{font:10px var(--mono);letter-spacing:1px;color:#f0f7ff}.map-label small{font:8px var(--mono);letter-spacing:1px;color:#55dcff;margin-top:5px}.label-senko{left:7%;top:22%}.label-kirin{right:7%;top:20%;border-color:#ff405f}.label-kirin small{color:#ff7187}.label-tetsu{left:42%;top:46%;border-color:#fff}.label-tetsu small{color:#d3e1ed}.label-ame{left:7%;bottom:17%;border-color:#b88aff}.label-ame small{color:#c9aaff}.label-minato{right:7%;bottom:15%;border-color:#55dcff}.map-legend{position:absolute;z-index:4;left:18px;bottom:16px;display:flex;gap:18px;flex-wrap:wrap;color:#9bb1c3;font:8px var(--mono);letter-spacing:1px}.map-legend span{display:flex;align-items:center;gap:7px}.map-legend i{display:inline-block;width:17px;height:3px}.legend-red{background:#ff405f;box-shadow:0 0 7px #ff405f}.legend-blue{background:#55dcff;box-shadow:0 0 7px #55dcff}.legend-violet{background:#b88aff}.map-scale{position:absolute;right:18px;bottom:18px;color:#557186;font:8px var(--mono);letter-spacing:1px}@media(max-width:760px){.city-map-v2{min-height:390px;aspect-ratio:unset;height:440px}.map-hud{font-size:7px;gap:8px}.map-label{padding:7px 8px}.map-label b{font-size:7px}.map-label small{font-size:6px}.label-senko{left:3%;top:20%}.label-kirin{right:3%;top:20%}.label-tetsu{left:39%;top:47%}.label-ame{left:3%;bottom:17%}.label-minato{right:3%;bottom:17%}.map-legend{left:10px;right:10px;bottom:9px;gap:8px;font-size:6px}.map-scale{display:none}}
+
+/* NAKA PHOTO WORLD THEME */
+:root{--bg:#09090d;--panel:#17171b;--line:#393238;--red:#d92743;--blue:#477fc2;--muted:#a39aa0;--white:#f3edf0}
+body{background:radial-gradient(ellipse at 78% 18%,#39202b55 0,transparent 42%),linear-gradient(115deg,#09090d 0%,#111015 48%,#090b11 100%);background-attachment:fixed}
+body:after{content:"";position:fixed;z-index:-1;pointer-events:none;top:0;right:0;width:min(64vw,980px);height:100vh;background-image:linear-gradient(90deg,#09090d 0%,#09090d22 36%,#09090d00 68%),linear-gradient(0deg,#09090d 0%,transparent 28%,#09090d20 100%),url('/Na-Ka/assets/naka.png');background-repeat:no-repeat;background-position:center,right center;background-size:cover,cover,auto 100vh;opacity:.42;filter:saturate(.78) contrast(1.08);mask-image:linear-gradient(to left,black 45%,transparent 100%); }
+body:before{z-index:0;opacity:.09;background-image:linear-gradient(#d5c3c90c 1px,transparent 1px),linear-gradient(90deg,#d5c3c90c 1px,transparent 1px);background-size:56px 56px}
+.top{background:#0b0a0ee8;border-bottom:1px solid #49313a;backdrop-filter:blur(14px)}
+.brand b,h1 span,.section-head h2 span,.num{color:#e13a50}
+nav a:hover,.eyebrow,.tag{color:#78a9e8}
+.hero{grid-template-columns:1fr;min-height:690px;padding:110px 0 105px}
+.hero-copy{max-width:650px;position:relative;z-index:2}
+.hero-art{display:none}
+h1{ text-shadow:0 8px 35px #000;letter-spacing:-5px}
+.jp{color:#e2cbd2;text-shadow:0 2px 18px #000}
+.lead{color:#ded5d8;text-shadow:0 2px 12px #000}
+.btn{border-color:#d92743;background:linear-gradient(110deg,#d9274330,#477fc21a);box-shadow:inset 0 0 18px #d9274310}
+.btn.alt{border-color:#536276;background:#101116a8}
+section{border-top-color:#3a2a31;background:linear-gradient(180deg,#0c0b10a8,#0a0a0dc9)}
+.section-head h2{ text-shadow:0 3px 18px #000}
+.panel,.fact,.file,.archive-reader,.quote{background:linear-gradient(145deg,#1b191de8,#101116ed);border-color:#49343d;box-shadow:0 12px 30px #0005}
+.panel:after{background:#d92743}
+.fact small,.micro{color:#b2a5aa}
+.file:hover,.fact:hover{border-color:#d94a60}
+.car-visual{background:radial-gradient(ellipse,#38232c,#101116 72%);border-color:#62404a}
+.tag{border-color:#496b96;color:#8bb7ef;background:#477fc211}
+.terminal-shell{border-color:#65404a;background:#09090ceF;box-shadow:0 18px 50px #0009}
+.terminal-bar{background:#21161d;border-color:#52313c}
+.terminal-form button{border-color:#5278a6;background:#172235;color:#9cc5ff}
+.city-map-v2{border-color:#62404a;background:#100e14;box-shadow:0 18px 55px #000b,inset 0 0 55px #351c2a}
+.map-label{background:#100d12ed;border-left-color:#d84a60}
+footer{border-color:#49343d}
+.backtop{background:#151017;color:#8bb7ef;border-color:#5879a1}
+.toast{background:#19131a;border-color:#d84a60}
+@media(max-width:760px){
+ body:after{width:100vw;height:68vh;top:65px;background-position:center top;background-size:cover,cover,auto 68vh;opacity:.24;mask-image:linear-gradient(to bottom,black 10%,transparent 95%)}
+ .hero{grid-template-columns:1fr;min-height:0;padding:65px 0 70px}
+ .hero-copy{max-width:100%}
+ section{background:linear-gradient(180deg,#0c0b10d9,#0a0a0df2)}
+}
 </style>
 </head>
 <body>
